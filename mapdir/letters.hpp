@@ -13,83 +13,23 @@ const string def0 = "\n"
                     "...\n"
                     "...\n"
                     "...\n";
+const string a=
+"┌─┐\n"
+"├─┤\n"
+"┴ ┴\n";
 
-const string z  = "+---+\n"
-                     "|   |\n"
-                     "|   |\n"
-                     "+   +\n"
-                     "|   |\n"
-                     "|   |\n"
-                     "+---+\n";
+const string b=
+"┌┐ \n"
+"├┴┐\n"
+"└─┘\n"
 
-const string o  = "    +\n"
-                     "    |\n"
-                     "    |\n"
-                     "    +\n"
-                     "    |\n"
-                     "    |\n"
-                     "    +\n";
+const string c=
 
-const string two   = "+---+\n"
-                     "    |\n"
-                     "    |\n"
-                     "+---+\n"
-                     "|    \n"
-                     "|    \n"
-                     "+---+\n";
+"┌─┐\n"
+"│  \n"
+"└─┘\n"
 
-const string three = "+---+\n"
-                     "    |\n"
-                     "    |\n"
-                     "+---+\n"
-                     "    |\n"
-                     "    |\n"
-                     "+---+\n";
-
-const string four  = "+   +\n"
-                     "|   |\n"
-                     "|   |\n"
-                     "+---+\n"
-                     "    |\n"
-                     "    |\n"
-                     "    +\n";
-
-const string five  = "+---+\n"
-                     "|    \n"
-                     "|    \n"
-                     "+---+\n"
-                     "    |\n"
-                     "    |\n"
-                     "+---+\n";
-
-const string six   = "+---+\n"
-                     "|    \n"
-                     "|    \n"
-                     "+---+\n"
-                     "|   |\n"
-                     "|   |\n"
-                     "+---+\n";
-
-const string seven = "+---+\n"
-                     "    |\n"
-                     "    |\n"
-                     "    +\n"
-                     "    |\n"
-                     "    |\n"
-                     "    +\n";
-
-const string eight = "+---+\n"
-                     "|   |\n"
-                     "|   |\n"
-                     "+---+\n"
-                     "|   |\n"
-                     "|   |\n"
-                     "+---+\n";
-
-const string nine  = "+---+\n"
-                     "|   |\n"
-                     "|   |\n"
-                     "+---+\n"
-                     "    |\n"
-                     "    |\n"
-                     "    +\n";
+const string d=
+"┌┬┐\n"
+" ││\n"
+"─┴┘\n"
