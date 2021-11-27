@@ -2,17 +2,13 @@
 
 using namespace std;
 
-const string a0  =    "\n"  //because there is going to be a letter a;
-                     "\n"
-                     "\n"
-                     "\n"
-                     "\n";
+const string a0  =   "   \n"  //because there is going to be a letter a;
+                     "   \n"
+                     "   \n";
 
-const string def0 = "\n"
-                    "...\n"
-                    "...\n"
-                    "...\n"
-                    "...\n";
+const string def0 = "   \n"
+                    "   \n"
+                    "   \n";
 const string a=
 "┌─┐\n"
 "├─┤\n"
@@ -174,7 +170,7 @@ const string v=
 
 "┬  ┬\n"
 "└┐┌┘\n"
- "└┘ \n";
+" └┘ \n";
 
 
 const string w=
@@ -201,7 +197,7 @@ const string y=
 
 "┬ ┬\n"
 "└┬┘\n"
- "┴ \n";
+" ┴ \n";
 
 const string z=
 

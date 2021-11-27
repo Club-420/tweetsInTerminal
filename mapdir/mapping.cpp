@@ -2,14 +2,16 @@
 #include "./letters.hpp"
 //#include "./numbers.hpp"
 
-std::string str = a0;
-
+int space = 0;
+static int i1 = 0;
 string operator *( const string a, const string b );
 
 std::string mapMe( std::string msg, int len ){
 
-    for( int i = 0; i < len; i++){
-        switch ( msg[i] )
+    std::string str = a0;
+    for(i1; i1 < len; i1++){
+        
+        switch ( msg[i1] )
         {
 
         case 'a':
@@ -104,6 +106,12 @@ std::string mapMe( std::string msg, int len ){
             str = str * z;
             break;
 
+        case ' ':
+            space++;
+            if( space > 2){
+                space = 0;
+                return str;
+            }
         default:
             str = str * def0;
             break;

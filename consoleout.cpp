@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unistd.h>
 #include <string>
 #include <sstream>
 #include "./mapdir/mapping.cpp"
@@ -14,6 +15,16 @@ string operator *( const string a, const string b )
    return result;
 }
 
+void taketonextline(int len, string msg){
+
+   if(i1 != (len - 1)){
+      string result = mapMe(msg, len);
+      std::cout<<result;
+      taketonextline(len, msg);
+   }
+   return;
+}
+
 
 int main(int argc, char **argv)
 {
@@ -26,9 +37,9 @@ int main(int argc, char **argv)
    
    int len = msg.length();
 
-   string result = mapMe(msg, len);
+   //string result = mapMe(msg, len);
 
-   std::cout<<result;
-   
+   taketonextline(len, msg);
+
    return 0;
 }

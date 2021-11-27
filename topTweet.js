@@ -1,4 +1,5 @@
 const { execFile } = require('child_process');
+const fs = require('fs');
 const request = require('request');
 const cheerio = require('cheerio');
 
@@ -26,16 +27,33 @@ request(url, (err, res, body) => {
 		args.push(tweet.toLowerCase());
 
 		//now we will send this to c++ program
-
-		execFile(runcmd, args, (err, stdout, stderr) => {
+		execFile(runcmd, args,{maxBuffer: 500 * 300}, (err, stdout, stderr) => {
 			if (err) {
 				console.log(err);
-
 			}
 			if (stdout) {
-				console.log(stdout);
+				const textfile = fs.createWriteStream('./quotes.txt', 'utf8');
+				textfile.write(stdout, ()=>{
+
+					fs.readFile('quotes.txt', 'utf8' , (err, data) => {
+						if (err) {
+						  console.error(err)
+						  return
+						}
+						console.log(data);
+						
+						fs.unlink('quotes.txt', (err) => {
+							if (err) {
+								throw err;
+							}
+						});
+					})
+					
+				});
+					  
 			}
 		});
+
 
 	}
 });
