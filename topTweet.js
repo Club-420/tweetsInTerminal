@@ -23,7 +23,7 @@ request(url, (err, res, body) => {
 		}
 
 		//now will we capitalize this tweet
-		args.push(tweet.toUpperCase());
+		args.push(tweet.toLowerCase());
 
 		//now we will send this to c++ program
 
